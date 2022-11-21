@@ -1,0 +1,174 @@
+﻿@model Contacts
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--INTRODUCTION-->
+        <div class="intro">
+            <div class="salute">
+                <div class="saluteTextContainer">
+                    <h1 class="saluteText">Hi</h1>
+                </div>
+                <div class="saluteImgContainer">
+                    <img src="./Images/person.png" alt="" class="saluteImg">
+                </div>
+            </div>
+            <div class="nameContainer">
+                <h2 class="name">I'm Euron</h2>
+            </div>
+            <div class="jobTitleContainer dark">
+                <h2 class="jobTitle">a Web Developer</h2>
+            </div>
+            <div class="jobTitleContainer purple">
+                <h2 class="jobTitle">and Game Developer</h2>
+            </div>
+        </div>
+        <!--PROJEKTET-->
+        <div class="projects">
+            <h1 class="projectsTitle">Here are my Porjects</h1>
+            <div class="project">
+                <div class="phone">
+                    <img src="./Images/phone.png" alt="" />
+                    <div class="phoneScreen">
+                        <img src="./Images/mobile.png" alt="" class="phoneApp" />
+                    </div>
+                </div>
+                <div class="projectDetail">
+                    <h1 class="projectTitle">Fix</h1>
+                    <p class="projectDesc">
+                        Professional servicing of all types of mobile phones with cutting-edge equipment.
+                        Fast service of certian models on the spot with the lowest price.
+                    </p>
+                    <!-- <form form="">
+                        <button class="projectButton">Learn More</button>
+                    </form> -->
+                </div>
+            </div>
+            <div class="project">
+                <div class="laptop">
+                    <img src="./Images/laptop.png" alt="" />
+                    <div class="laptopScreen">
+                        <img src="./Images/eTech.png" alt="" class="laptopApp" />
+                    </div>
+                </div>
+                <div class="projectDetail">
+                    <h1 class="projectTitle">eTech</h1>
+                    <p class="projectDesc">
+                        eTech is a Tech Company where you can find best technology products.
+                        For more click the button and watch the Demo!
+
+                    </p>
+                    <form action="https://youtu.be/QqsQ4sOcfq0" target="_blank">
+                        <button class="projectButton">Learn More</button>
+                    </form>
+                </div>
+            </div>
+            <div class="project">
+                <div class="phone">
+                    <img src="./Images/laptop.png" alt="" />
+                    <div class="laptopScreen">
+                        <img src="./Images/DocAppointment.png" alt="" class="laptopApp" />
+                    </div>
+                </div>
+                <div class="projectDetail">
+                    <h1 class="projectTitle">DocApp</h1>
+                    <p class="projectDesc">
+                        Mobile apps allow providers to effectively streamline communication\
+                        between pacients,providers,and
+                        their caregivers and allows for 24/7 management of a patient's
+                        condition along with the ability to personalize
+                        healthcare per patient!
+
+                    </p>
+                    <form action="https://youtu.be/JAP8ON5bRNE" target="_blank">
+                        <button class="projectButton">Learn More</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--GITHUB-->
+        <div class="githubContainer">
+            <h1 class="githubTitle">Want to see all projects?</h1>
+
+            <div class="githubChart">
+                <div class="dates">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Agu</span>
+                    <span>Sep</span>
+                    <span>Oct</span>
+                    <span>Nov</span>
+                    <span>Dec</span>
+                </div>
+                <a href="https://github.com/euron1" target="_blank">
+                    <div class="boxContainer">
+
+                    </div>
+                </a>
+                <h1 class="githubTitle">ON GITHUB</h1>
+                <br>
+
+
+            </div>
+            <div class="githubSm">
+                <a href="https://github.com/euron1">
+                    <img src="./Images/github.png" alt="">
+                </a>
+                <h2>Find Me on GitHub</h2>
+
+            </div>
+        </div>
+    </div>
+    <section class="contact section" id="contact">
+        <div class="container flex-center">
+            <div class="content">
+                <div class="contact-left">
+                    <h2>Let's discuss your project</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                            <span>+38349227837</span>
+                        </li>
+                        <li>
+                            <h3 class="item-title"><i class="fas fa-envelope"></i> Email</h3>
+                            <span><a href="mailto:euronismajli68@gmail.com">euronismajli68@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Address</h3>
+                            <span>Prishtine, Kosove</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-right">
+                    <p>I'm always open for projects or design</p>
+                    <form class="contact-form" asp-action="Contact">
+                        <div class="first-row">
+                            <input type="text" placeholder="Name" asp-for="Name">
+                        </div>
+                        <div class="second-row">
+                            <input type="email" placeholder="Email" asp-for="Email">
+                        </div>
+                        <div class="third-row">
+                            <textarea name="message" id="" rows="7" placeholder="Message" asp-for="Message"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send Message<i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+</html>
