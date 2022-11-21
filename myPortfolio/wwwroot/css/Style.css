@@ -285,6 +285,22 @@
         font-size: 30px;
         text-align: center;
     }
+    .contact .content {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .contact .contact-left {
+        margin-bottom: 40px;
+    }
+
+    .contact-form .section-row {
+        flex-direction: column;
+    }
+
+    .contact-form .first-row input {
+        width: 76.8%;
+    }
 }
 
 /*contactform css*/
